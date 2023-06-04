@@ -1,0 +1,23 @@
+--Query:Swapping of two numbers
+PL/SQL block:
+
+declare
+	a int;
+	b int;
+begin
+	a:=&a;
+	b:=&b;
+      dbms_output.put_line('Before swaping a and b values are '||a||' and '||b);
+	a:=a+b;
+	b:=a-b;
+	a:=a-b;
+	dbms_output.put_line('After swaping a and b values are '||a||' and '||b);
+end;
+/
+
+--Output:
+
+ Before swaping a and b values are 30 and 40
+After swaping a and b values are 40 and 30
+
+PL/SQL procedure successfully completed.
